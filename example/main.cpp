@@ -2,12 +2,15 @@
 #include <QMessageBox>
 #include "dialog.h"
 
+// Add single instance header
 #include <QSingleInstance>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
+	// Apply guard after QApplication instantiation
+	// but before instantiating any custom widgets
 	QSingleInstance guard("MyQDialog");
 	if (!guard.tryToRun())
 	{
@@ -18,6 +21,7 @@ int main(int argc, char *argv[])
 		return -1;
 	}
 
+	// Custom application dialog
     Dialog w;
     w.show();
     
