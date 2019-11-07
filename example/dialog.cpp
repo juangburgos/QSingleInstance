@@ -12,3 +12,8 @@ Dialog::~Dialog()
 {
     delete ui;
 }
+
+void Dialog::on_pushButtonCrash_clicked()
+{
+    delete reinterpret_cast<QString*>(0xFEE1DEAD);
+}
