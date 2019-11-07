@@ -21,3 +21,5 @@ HEADERS  += dialog.h
 FORMS    += dialog.ui
 
 include($$PWD/../src/qsingleinstance.pri)
+
+include($$PWD/add_qt_path_win.pri)

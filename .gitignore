@@ -289,3 +289,4 @@ _resource.rc$
 /Library/NCProtocol/NCProtocold_resource.rc
 /Library/LogLibrary/EwLogFunctions_resource.rc
 /Library/LogLibrary/EwLogFunctionsd_resource.rc
+*.stash
